@@ -456,8 +456,8 @@ const App: React.FC = () => {
         <canvas ref={canvasRef} className="hidden" />
       </div>
 
-      <footer className="mt-10 text-stone-300 text-[9px] font-black tracking-[0.4em] uppercase text-center opacity-50">
-        Dubai Cookie Factory AI
+      <footer className="mt-10 text-stone-300 text-[10px] font-black tracking-[0.1em] text-left">
+        contact : woqls226@gmail.com <br /> github: woqls22
       </footer>
 
       <style>{`
