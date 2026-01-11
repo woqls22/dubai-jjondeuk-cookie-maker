@@ -52,11 +52,15 @@ const App: React.FC = () => {
   const getStepImageUrl = (currentStep: RecipeStep): string => {
     // These should ideally be replaced with your actual image file paths
     const images: Record<string, string> = {
-      [RecipeStep.MELT_BUTTER]: "public/images/melting_butter.png",
-      [RecipeStep.FRY_KADAIF]: "public/images/cadaif.jpg",
-      [RecipeStep.MIX_PISTACHIO]: "public/images/mixed.jpg",
-      [RecipeStep.SHAPE_BALLS]: "public/images/shape_balls.jpg",
-      [RecipeStep.MELT_MARSHMALLOW]: "public/images/mashmellow.jpg",
+      [RecipeStep.MELT_BUTTER]:
+        "/dubai-jjondeuk-cookie-maker/images/melting_butter.png",
+      [RecipeStep.FRY_KADAIF]: "/dubai-jjondeuk-cookie-maker/images/cadaif.jpg",
+      [RecipeStep.MIX_PISTACHIO]:
+        "/dubai-jjondeuk-cookie-maker/images/mixed.jpg",
+      [RecipeStep.SHAPE_BALLS]:
+        "/dubai-jjondeuk-cookie-maker/images/shape_balls.jpg",
+      [RecipeStep.MELT_MARSHMALLOW]:
+        "/dubai-jjondeuk-cookie-maker/images/mashmellow.jpg",
       [RecipeStep.ADD_SEASONING]: getSeasoningPhoto(),
     };
     return images[currentStep] || "public/images/dark_result.jpg";
@@ -64,18 +68,18 @@ const App: React.FC = () => {
   const getSeasoningPhoto = () => {
     switch (config.seasoning) {
       case "코코아 파우더":
-        return "public/images/dark_result.jpg";
+        return "/dubai-jjondeuk-cookie-maker/images/dark_result.jpg";
       case "말차 파우더":
-        return "public/images/green_result.jpg";
+        return "/dubai-jjondeuk-cookie-maker/images/green_result.jpg";
       case "고춧가루":
-        return "public/images/red_result.jpg";
+        return "/dubai-jjondeuk-cookie-maker/images/red_result.jpg";
       case "시나몬 파우더":
-        return "public/images/sinamon_result.jpg";
+        return "/dubai-jjondeuk-cookie-maker/images/sinamon_result.jpg";
       case "슈가 파우더":
-        return "public/images/white_result.jpg";
+        return "/dubai-jjondeuk-cookie-maker/images/white_result.jpg";
     }
     setFinalImageUrl(config.seasoning);
-    return "public/images/dark_result.jpg";
+    return "/dubai-jjondeuk-cookie-maker/images/dark_result.jpg";
   };
 
   const handleNext = () => {
