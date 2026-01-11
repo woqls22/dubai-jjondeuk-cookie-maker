@@ -200,7 +200,7 @@ const App: React.FC = () => {
           <div
             className="relative h-[85vh] w-full max-w-md bg-cover bg-center rounded-[3rem] shadow-2xl overflow-hidden flex flex-col justify-end p-8"
             style={{
-              backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.1) 100%), url('public/images/background.jpg')`,
+              backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.1) 100%), url('/dubai-jjondeuk-cookie-maker/images/background.jpg')`,
             }}
           >
             <div className="text-white mb-6">
